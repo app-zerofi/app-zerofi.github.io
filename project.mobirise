@@ -1,0 +1,151 @@
+{
+  "settings": {
+    "name": "zerofi",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "backgroundColor": "#ffffff",
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": []
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "6.1.12",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/byreal-logo.png",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nsitemap: https://app-zerofi.github.io/sitemap.xml",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://app-zerofi.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "mbrsiteDomain": "vkt3wiyfqg",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "6.1.12"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Zerofi™ | Home Official Site",
+        "meta_descr": "Deep experience in Solana orderbook-based DEXs. Contributed to optimising every Solana DEX for better MM experience. DEX liquidity at all levels.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <img src=\"@PROJECT_PATH@/assets/images/apheliontrading.png\" alt=\"zerofi\">\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_anchor": "image04-0",
+          "_isUserblock": true,
+          "_cid": "vvWzsP7pOr",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"11\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>OG Solana Market Maker: A Complete Guide to Aphelion Trading</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Understanding Aphelion Trading, Solana Market Making, On-Chain Liquidity, DEX Order Books, and Its Role in DeFi</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">The growth of decentralized finance has created an increasing need for reliable liquidity. On a blockchain such as Solana, users expect to be able to buy and sell tokens efficiently, while decentralized exchanges need sufficient liquidity to support active markets. This is where professional market makers play an important role.<br><br>Aphelion Trading, which describes itself as an “OG Solana market maker,” is a Solana-native market-making firm focused on on-chain liquidity and decentralized exchange infrastructure. Its website highlights deep experience with Solana order-book-based decentralized exchanges and services covering liquidity across different DEX venues.<br><br>For projects launching tokens, decentralized exchanges seeking deeper markets, and protocols building trading infrastructure, understanding what a Solana market maker does provides useful insight into how decentralized markets function.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>What Is a Solana Market Maker?</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">A market maker is a participant that provides buy and sell liquidity to a market. In traditional finance, market makers help maintain active order books by continuously quoting prices for assets.<br><br>The same basic concept can be applied to decentralized markets, although the implementation differs depending on the trading system.<br><br>Solana supports several different types of decentralized trading infrastructure, including automated market makers, concentrated liquidity systems, and central-limit-order-book-style exchanges. Aphelion focuses particularly on the order-book side of the Solana ecosystem. Its website says the firm has “deep experience in Solana orderbook-based DEXs” and has contributed to optimizing Solana DEXs for market-making activity.<br><br>A professional market maker can place and manage liquidity around a market price, helping create a more functional trading environment for users.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>What Is Aphelion Trading?</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Aphelion Trading presents itself as a Solana-native market-making firm founded by Adam, known online as Space Monkey. Public posts associated with the company describe its mission as accelerating decentralized trading and DeFi.<br><br>Its website emphasizes three major areas:<br><br>Liquidity across decentralized exchanges<br>Token liquidity across DEX markets<br>Experience with Solana order-book-based trading<br><br>The company also lists relationships with or work involving several Solana ecosystem projects and trading venues, including Jupiter, Zeta Markets, OpenBook, Phoenix, Drift, Mango Markets, and deBridge.<br><br>These relationships illustrate the type of ecosystem in which a market-making firm operates: decentralized exchanges, trading protocols, aggregators, and infrastructure providers all depend on functioning liquidity markets.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>How Market Making Works on Solana</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Market making on Solana can involve supplying liquidity to order books or other decentralized liquidity systems.<br><br>In an order-book environment, buy orders are placed at different prices below the current market price while sell orders can be placed above it. The collection of these orders creates a market structure that allows traders to execute purchases and sales.<br><br>A market maker can continuously adjust these orders based on market conditions.<br><br>The goal is not simply to place a large amount of capital into one position. Effective market making involves managing inventory, prices, spreads, volatility, and execution risk.<br><br>Solana's high-speed infrastructure can be particularly relevant for automated trading because market makers may need to update orders frequently as prices change.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Liquidity Across Solana DEXs</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">One of Aphelion's stated areas of focus is providing liquidity across Solana decentralized exchanges. The company's website specifically describes its offering as “DEX liquidity at all levels” and “token liquidity on all DEXs.”<br><br>Liquidity is important because a market with insufficient liquidity can experience significant price impact. A trader attempting to execute a large order may move the market substantially if there are not enough opposing orders.<br><br>Greater liquidity can potentially support:<br><br>More efficient trade execution<br>Tighter spreads<br>Greater market depth<br>Lower price impact<br>More consistent trading activity<br><br>However, liquidity conditions vary by token, exchange, market volatility, and trading volume. Market making does not eliminate these risks.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Supporting New Token Markets</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Token projects are another important part of the market-making ecosystem.<br><br>When a new token begins trading, it may initially have limited liquidity and a relatively small number of market participants. Professional liquidity providers can help establish trading markets across supported decentralized exchanges.<br><br>Aphelion has publicly promoted its work with tokens and Solana-based projects. Its social profile describes the firm as specializing in on-chain liquidity and DEX advisory.<br><br>For a token project, market-making arrangements can involve considerations such as:<br><br>Which DEXs should receive liquidity<br>How liquidity should be distributed<br>How market depth should be managed<br>How inventory risk is controlled<br>How liquidity changes during volatile periods<br><br>These decisions can have an important effect on the trading experience surrounding a newly launched asset.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Order Books and Capital Efficiency</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">One feature associated with Solana's decentralized trading infrastructure is the use of on-chain order books.<br><br>Compared with some traditional automated market-maker models, an order book can allow liquidity providers or professional market makers to quote specific prices.<br><br>Aphelion has publicly highlighted order-book-based trading and previously promoted on-chain BTC trading through a central-limit-order-book model on Solana.<br><br>Order books can provide precise control over where liquidity is placed, although maintaining efficient quotes requires active management.<br><br>Capital efficiency is therefore an important consideration. A market maker generally wants available capital to provide meaningful liquidity without unnecessarily exposing the entire inventory to market movements.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Aphelion and the Solana DeFi Ecosystem</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Aphelion operates within a broad Solana trading ecosystem rather than functioning as an isolated platform.<br><br>The company's website identifies partnerships or ecosystem relationships involving Jupiter, Zeta Markets, OpenBook, Phoenix, Drift, Mango Markets, and deBridge.<br><br>These projects represent different parts of decentralized trading infrastructure. Aggregators help users find routes between liquidity sources, decentralized exchanges facilitate trading, and cross-chain protocols connect assets and ecosystems.<br><br>Market makers can therefore serve as an underlying liquidity layer connecting token projects with trading venues.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Why Market Makers Matter</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Market makers are important because decentralized markets need liquidity to function effectively.<br><br>Without sufficient liquidity, even a popular token can experience large spreads or significant price impact. Traders may have difficulty entering or exiting positions at prices close to the displayed market price.<br><br>A market maker can help address some of these issues by continuously quoting both sides of a market.<br><br>However, market makers do not guarantee a particular token price, trading volume, or market performance. Their activities are subject to market conditions, inventory constraints, volatility, and liquidity demand.<br><br>This distinction is important when evaluating market-making services.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Future of Solana Market Making</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">As Solana's decentralized trading ecosystem develops, professional liquidity infrastructure is likely to remain an important component of the market.<br><br>The ecosystem continues to include order-book exchanges, automated market makers, liquidity aggregators, derivatives platforms, and other financial applications.<br><br>Aphelion's focus on Solana-native liquidity and order-book-based DEXs positions it within this broader development. Its stated objective of improving the market-making experience across Solana DEXs reflects the increasing sophistication of decentralized trading infrastructure.<br><br>Future market-making systems may increasingly combine automated strategies, sophisticated risk management, real-time blockchain data, and liquidity routing across multiple venues.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Risks and Considerations</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Market making is a specialized financial activity and carries substantial risks.<br><br>One major risk is inventory exposure. If an asset moves sharply in one direction, a market maker holding inventory may experience losses.<br><br>Another is volatility. Rapid price movements can make previously placed orders outdated within a short period.<br><br>There are also smart-contract and infrastructure risks when market-making activity interacts with decentralized protocols.<br><br>For token projects considering market-making services, it is important to understand the terms of any agreement, including liquidity arrangements, inventory management, fees, token allocations, reporting, and termination conditions.<br><br>For ordinary traders, the existence of a market maker should not be interpreted as a guarantee that an asset is legitimate or that its price will rise.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Conclusion</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">The term OG Solana Market Maker refers to Aphelion Trading, a Solana-focused market-making firm that works around on-chain liquidity and decentralized trading infrastructure.<br><br>Aphelion's public materials emphasize experience with Solana order-book DEXs, liquidity provision, token markets, and DEX advisory.<br><br>Market makers play an important behind-the-scenes role in decentralized markets. By providing buy and sell liquidity, they can contribute to deeper markets and more efficient trading environments.<br><br>For anyone researching Solana's DeFi ecosystem, understanding market makers such as Aphelion helps explain what happens beneath the user-facing trading interface. DEXs, aggregators, tokens, and traders all depend on liquidity, making professional market-making infrastructure an important part of the broader Solana trading landscape.</p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_anchor": "article07-1",
+          "_isUserblock": true,
+          "_cid": "vvWzt2I1Xp",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
